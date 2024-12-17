@@ -13,6 +13,8 @@ class OrderCancelTest extends PHPUnit_Framework_TestCase
 
 
     /**
+     * @dataProvider providerProcessDataCallable
+     *
      * @param array $parameters
      * @param array $response
      *
@@ -50,6 +52,23 @@ class OrderCancelTest extends PHPUnit_Framework_TestCase
 
         $service = new OrderCancel();
         $this->assertNotNull($service->processData($orderCancel, $parameters));
+    }
+
+    /**
+     * @return array
+     */
+    public static function providerProcessDataCallable()
+    {
+        return [
+            [
+                'parameters' => [
+                    1 => 1
+                ],
+                'response' => [
+                    'status' => true
+                ],
+            ],
+        ];
     }
 
     /**

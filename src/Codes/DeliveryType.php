@@ -14,6 +14,7 @@ class DeliveryType extends AbstractCodes
     const DELIVERY_TYPE_EXPRESS = 4;
     const DELIVERY_TYPE_SPECIAL = 5;
     const DELIVERY_TYPE_CZECH_POST_SPECIAL = 6;
+    const DELIVERY_TYPE_DEPOT_API = 9;
 
     /**
      * Gets constants as array
@@ -29,6 +30,7 @@ class DeliveryType extends AbstractCodes
             self::DELIVERY_TYPE_EXPRESS,
             self::DELIVERY_TYPE_SPECIAL,
             self::DELIVERY_TYPE_CZECH_POST_SPECIAL,
+            self::DELIVERY_TYPE_DEPOT_API,
         ];
     }
 
